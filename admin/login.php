@@ -1,3 +1,6 @@
+<?php 
+    require '../loader.php';
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -18,17 +21,31 @@
                             </div>
                         </div>
                         <div class="panel-body">
+                            
+                            <?php 
+                                if(isset($_POST['ulogin'])){
+                                    $name = $_POST['uname'];
+                                    $password = $_POST['upass'];
+                                    if(empty($name)){
+                                        msgBox('Please Enter Username', 'danger');
+                                    }else if(empty ($password)){
+                                        msgBox('Please Enter Password', 'danger');
+                                    }else{
+                                        
+                                    }
+                                }
+                            ?>
                             <form method="post" action="login.php" class="form-horizontal">
                                 <div class="form-group">
                                     <label class="col-sm-2 label label-warning control-label text-uppercase">UserName:</label>
                                     <div class="col-sm-10">
-                                        <input type="text" name="uname" placeholder="Enter Your Username" class="from-control" />
+                                        <input type="text" name="uname" placeholder="Enter Your Username" class="form-control" />
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label class="col-sm-2 label label-warning control-label text-uppercase">Password:</label>
+                                    <label class="col-sm-2 label label-warning bg-warning control-label text-uppercase">Password:</label>
                                     <div class="col-sm-10">
-                                        <input type="password" name="upass" placeholder="Enter Your Password" class="from-control" />
+                                        <input type="password" name="upass" placeholder="Enter Your Password" class="form-control" />
                                     </div>
                                 </div>
                                 <input type="submit" name="ulogin" value="Login" class="btn btn-warning btn-sm btn-block" />
