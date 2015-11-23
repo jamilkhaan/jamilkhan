@@ -1,0 +1,23 @@
+.login-screen{
+    background-image: url(../img/login.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.login-container{
+    padding-top: 5%;
+}
+
+.panel-login{
+    background-color: rgba(255,255,255,0.3);
+    border: none;
+}
+
+.panel-login > .panel-heading{
+    background-color: rgba(255,255,255,0.5);
+}
+
+.panel-login > .panel-heading > .panel-title{
+    font-size: 20px;
+}
