@@ -10,5 +10,3 @@
  define('SITEURL', 'http://localhost/theme');
 
  define('ABSPATH', dirname(__FILE__).'/');
- 
- echo ABSPATH;
