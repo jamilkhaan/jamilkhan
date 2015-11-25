@@ -3,7 +3,7 @@
  
  define('DB_NAME', 'jamilkhan');
  
- define('DB_USER', '');
+ define('DB_USER', 'root');
  
  define('DB_PASS', '');
  

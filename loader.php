@@ -6,7 +6,7 @@ require dirname(__FILE__).'/config.php';
 
 ///Make database connection
 
-$link = mysql_connect('localhost', 'root', '') or die(mysql_error()); 
+$link = mysql_connect(DB_HOSt, DB_USER, DB_PASS) or die(mysql_error()); 
 
 //select database
 
